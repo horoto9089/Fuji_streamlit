@@ -3,19 +3,19 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import plotly
-#import japanize-matplotlib
 
 st.set_page_config(layout="wide")
 
 st.snow()
 
+# Sidebar menu with links to each section by using HTML anchor tags
 st.sidebar.markdown('''
 # MENU
-- [purpose and significance](#研究目的・意義)
-- [model](#モデル)
-- [data](#データ)
-- [result](#結果・考察)
-- [conclusion](#結論)
+- [purpose and significance](#purpose-and-significance)
+- [model](#model)
+- [data](#data)
+- [result](#result)
+- [conclusion](#conclusion)
 ''', unsafe_allow_html=True)
 
 
@@ -24,10 +24,7 @@ st.title("Repository of Graduation Thesis")
 
 
 
-
-
-
-st.header("研究目的・意義")
+st.header("研究目的・意義", anchor="purpose-and-significance")
 st.markdown("---")
 st.text("自動販売機は公共財（災害時物資提供媒体、地域情報、AEDなど）の供給面でも地域への大切な役割がある。")
 
@@ -45,7 +42,7 @@ with st.expander("English.ver"):
 
 
 
-st.header("モデル")
+st.header("モデル", anchor="model")
 st.markdown("---")
 
 
@@ -61,7 +58,7 @@ with st.expander("English.ver"):
 
 
 
-st.header("データ")
+st.header("データ", anchor='data')
 st.markdown("---")
 
 
@@ -78,7 +75,7 @@ with st.expander("English.ver"):
 
 
 
-st.header("結果・考察")
+st.header("結果・考察", anchor='result')
 st.markdown("---")
 
 
@@ -95,7 +92,7 @@ with st.expander("English.ver"):
 
 
 
-st.header("結論")
+st.header("結論", anchor='conclusion')
 st.markdown("---")
 
 
