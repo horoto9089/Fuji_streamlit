@@ -1,2 +1,6 @@
 matplotlib
 plotly
+scikit-mobility
+skmob
+streamlit_folium
+folium
